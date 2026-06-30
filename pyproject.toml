@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-ops-copilot"
+version = "0.1.0"
+description = "Enterprise AI Operations Copilot for incident triage and action recommendations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "streamlit>=1.37,<2",
+  "pydantic>=2.8,<3",
+  "langgraph>=0.2,<0.4",
+  "langchain>=0.2,<0.4",
+  "langchain-core>=0.2,<0.4",
+  "transformers>=4.44,<5",
+  "torch>=2.3,<3",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+incident-copilot = "agentic_ops_copilot.cli:main"
