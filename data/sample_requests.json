@@ -1,0 +1,14 @@
+[
+  {
+    "name": "normal",
+    "text": "Customers in Kuwait City are seeing dropped 5G sessions after a radio stack refresh. The team suspects handover failures and wants the next actions."
+  },
+  {
+    "name": "noisy",
+    "text": "Huge alarm burst after planned maintenance and several duplicate events are flooding the NMS. Need priority, likely cause, and what to do first."
+  },
+  {
+    "name": "failure",
+    "text": "Not enough data. A few users report intermittent issues and the logs are incomplete. What should the copilot do when the evidence is weak?"
+  }
+]
