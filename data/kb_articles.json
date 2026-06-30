@@ -1,0 +1,37 @@
+[
+  {
+    "article_id": "KB-2001",
+    "title": "How to handle alarm floods after planned maintenance",
+    "body": "Use suppression windows, deduplicate recurring signals, and verify maintenance tags before reopening incidents.",
+    "tags": ["alarm", "maintenance", "suppression"],
+    "services": ["NMS", "NOC"]
+  },
+  {
+    "article_id": "KB-2002",
+    "title": "5G handover failures troubleshooting checklist",
+    "body": "Check neighbor relations, recent radio parameter changes, DU health, and attach failure counters before rollback.",
+    "tags": ["5g", "handover", "radio"],
+    "services": ["5G RAN"]
+  },
+  {
+    "article_id": "KB-2003",
+    "title": "Messaging backlog and SMPP throttling guide",
+    "body": "Review queue depth, connector throughput, and downstream throttling thresholds. Scale the broker if the backlog grows steadily.",
+    "tags": ["sms", "smpp", "queue"],
+    "services": ["Messaging"]
+  },
+  {
+    "article_id": "KB-2004",
+    "title": "Billing ETL optimization playbook",
+    "body": "Introduce pre-aggregations, partition pruning, and retry controls. Watch for month-end data skew and long-running scans.",
+    "tags": ["billing", "etl", "query"],
+    "services": ["Billing"]
+  },
+  {
+    "article_id": "KB-2005",
+    "title": "Authentication timeout and cache saturation guidance",
+    "body": "Investigate auth gateway caches, token validation latency, and login burst patterns around shift changes.",
+    "tags": ["auth", "cache", "timeout"],
+    "services": ["CRM", "Digital Workplace"]
+  }
+]
