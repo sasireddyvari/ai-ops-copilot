@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      COPILOT_BACKEND: rules
+      COPILOT_USE_GRAPH: "1"
+
+  ui:
+    build: .
+    command: ["streamlit", "run", "src/agentic_ops_copilot/streamlit_app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    ports:
+      - "8501:8501"
+    environment:
+      COPILOT_BACKEND: rules
+      COPILOT_USE_GRAPH: "1"
